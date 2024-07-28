@@ -1,0 +1,12 @@
+{{ name }}
+
+<input
+  type="text"
+  [(ngModel)]="yourName"
+  placeholder="введите имя"
+  [title]="tooltip"
+/>
+<!-- Ngmodule позволяет делайть двусторонее связывание -->
+<button class="btn" (click)="send(yourName)">Send</button>
+
+<!-- байдим в одну стороно в html   -->
